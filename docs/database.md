@@ -1,1 +1,1 @@
-Maria Db
+Menggunakan MariaDb sebagai database
