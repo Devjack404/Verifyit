@@ -1,5 +1,5 @@
 export default function Logo(){
     return (
-        <h1 className="bg-blue-500">VerifyIt</h1>
+        <h1 className="text-xl font-bold tracking-tight">VerifyIt</h1>
     );
 }

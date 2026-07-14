@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 export default function MyApp() {
   return (
     <>
-        <Navbar />
+        <Navbar className=""/>
 
         <main>
             <h1>Welcome</h1>
