@@ -11,6 +11,8 @@ export default function Footer () {
                 <FooterLinks />
 
                 <FooterActions />
+
+                <p className="text-gray-500">© 2026 VerifyIt. Secure the web together.</p>
             </div>
         </footer>
     );
