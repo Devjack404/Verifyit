@@ -4,7 +4,7 @@ import SearchBar from "./components/SearchBar/SearchBar";
 
 export default function MyApp() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex bg-gray-100 min-h-screen flex-col">
       <Navbar />
 
       <main className="flex flex-1 flex-col items-center justify-center px-6 pt-20">
@@ -15,7 +15,7 @@ export default function MyApp() {
           security appraisal and browse with confidence.
         </p>
 
-        <div>
+        <div className="mt-15">
           <SearchBar />
         </div>
       </main>
