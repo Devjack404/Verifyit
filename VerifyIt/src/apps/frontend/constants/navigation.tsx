@@ -1,3 +1,5 @@
+import { href } from "react-router-dom";
+
 export const NAVIGATION = [
   {
     title: "Features",
@@ -11,4 +13,20 @@ export const NAVIGATION = [
     title: "About",
     href: "/about",
   },
+  {
+    title : "GitHub",
+    href : "/github"
+  },
+  {
+    title : "Documatation",
+    href : "/documentation"
+  },
+  {
+    title : "Privacy Policy",
+    href : "/privacy&policy"
+  },
+  {
+    title : "Contact",
+    href : "contact"
+  }
 ];
