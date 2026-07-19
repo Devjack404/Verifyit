@@ -9,10 +9,12 @@ export default function Navbar(){
         <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
             <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
                 <Logo />
-                <NavLinks />
-                <NavActions />
-            </div>
 
+                <div className="flex items-center gap-10">
+                    <NavLinks />
+                    <NavActions />
+                </div>
+            </div>
         </nav>
     );
 }
