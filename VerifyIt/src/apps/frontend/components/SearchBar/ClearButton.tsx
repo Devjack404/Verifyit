@@ -1,5 +1,11 @@
-export default function ClearButton () {
+type ClearButtonProps = (
+    onClick: () => void;
+);
+
+export default function ClearButton ({onClick}: ClearButtonProps) {
     return (
-        <button>Clear</button>
+        <button onClick={onClick}>
+            Clear
+        </button>
     );
 }
