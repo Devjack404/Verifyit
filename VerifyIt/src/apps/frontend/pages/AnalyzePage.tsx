@@ -1,6 +1,6 @@
 import SearchBar from "../components/SearchBar/SearchBar";
 
-export default function loadingAnalyzePage(){
+export default function analyzePage(){
     return (
         <div>
             <main className="flex flex-1 flex-col items-center px-6 pt-20">
