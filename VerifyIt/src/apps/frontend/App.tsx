@@ -1,7 +1,9 @@
+import { Routes, Route } from "react-router-dom";
+
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import AnalyzePage from "./pages/AnalyzePage";
-
+import DisplayResultPage from "./pages/DisplayResultPage";
 
 export default function MyApp() {
   return (
@@ -9,7 +11,10 @@ export default function MyApp() {
       <Navbar />
 
       <main className="flex-1 ">
-        <AnalyzePage />
+        <Routes>
+          <Route path="/" element={<AnalyzePage />} />
+          <Route path="/result" element={<DisplayResultPage />} />
+        </Routes>
       </main>
 
       <Footer />
