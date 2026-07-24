@@ -1,11 +1,22 @@
 export default function DomainAnalysisContainer (){
     return (
-        <div className="bg-gray-50 ">
-            <h2 className="text-2xl">example-secure-shop.com</h2>
-            <p>Analysis Date :</p>
+        <div className="bg-gray-50 flex ">
+            {/* Left */}
             <div>
-                <button>Share</button>            
-                <button>Copy Link</button>
+                <h2 className="text-3xl font-bold">example-secure-shop.com</h2>
+
+                <p className="mt-2 text-sm text-gray-500">Analysis Date :</p> 
+            </div>
+
+            {/* Rigth */}
+            <div className="flex gap-3">
+                <button className="rounded-full border px-5 py-2 text-sm hover:bg-gray-100">
+                    Share
+                </button>            
+
+                <button className="rounded-full border px-5 py-2 text-sm hover:bg-gray-100">
+                    Copy Link
+                </button>
             </div>
             
         </div>
