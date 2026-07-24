@@ -1,0 +1,49 @@
+export default function AdviceContainer() {
+  return (
+    <aside className="w-full rounded-2xl bg-blue-700 p-8 text-white shadow-lg">
+      {/* Header */}
+      <div className="flex items-center gap-3">
+        <svg
+          className="h-7 w-7"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fillRule="evenodd"
+            d="M11.644 3.066a1 1 0 0 1 .712 0l7 2.666A1 1 0 0 1 20 6.68a17.694 17.694 0 0 1-2.023 7.98 17.406 17.406 0 0 1-5.402 6.158 1 1 0 0 1-1.15 0 17.405 17.405 0 0 1-5.403-6.157A17.695 17.695 0 0 1 4 6.68a1 1 0 0 1 .644-.949l7-2.666Zm4.014 7.187a1 1 0 0 0-1.316-1.506l-3.296 2.884-.839-.838a1 1 0 0 0-1.414 1.414l1.5 1.5a1 1 0 0 0 1.366.046l4-3.5Z"
+            clipRule="evenodd"
+          />
+        </svg>
+
+        <h2 className="text-2xl font-bold">
+          Security Recommendation
+        </h2>
+      </div>
+
+      {/* Description */}
+      <p className="mt-6 leading-7 text-blue-100">
+        While this site is safe, always ensure your browser is up to date
+        and you use unique passwords for every service. Enable
+        two-factor authentication (2FA) wherever possible.
+      </p>
+
+      {/* Button */}
+      <button
+        className="
+          mt-10
+          w-full
+          rounded-full
+          bg-white
+          py-3
+          font-semibold
+          text-blue-700
+          transition
+          hover:bg-gray-100
+        "
+      >
+        Download Report PDF
+      </button>
+    </aside>
+  );
+}
