@@ -28,7 +28,6 @@ Banyak pengguna internet mengalami kesulitan membedakan website yang aman dan we
 - malware
 - fake store
 - fake login page
-- misinformation
 
 VerifyIt bertujuan membantu pengguna mengambil keputusan dengan lebih percaya diri melalui analisis yang mudah dipahami.
 
@@ -118,9 +117,6 @@ Kemungkinan akan terdiri dari:
 
 - Pages
 - Components
-- Hooks
-- Services
-- Utilities
 - Assets
 
 ---
@@ -150,10 +146,8 @@ public/
 assets/
 components/
 pages/
-hooks/
-services/
-utils/
-config/
+docker/
+docs/
 
 package.json
 vite.config.ts
