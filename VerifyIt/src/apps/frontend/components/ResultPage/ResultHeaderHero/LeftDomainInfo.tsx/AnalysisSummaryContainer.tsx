@@ -1,10 +1,24 @@
 export default function AnalysisSummarryContainer (){
     return (
-        <div className="bg-gray-50">
-            <h2>example-secure-shop.com</h2>
-            <p>Analysis Date :</p>
-            <button>Share</button>            
-            <button>Copy Link</button>            
-        </div>
-    )
+        <section>
+            <div className="bg-gray-50">
+                <h3>82</h3>
+                <p>TRUST SCORE</p>
+            </div>
+
+            <div>
+                <h3>Low Risk</h3>
+                <p>Analysis Summary</p> 
+                <p>
+                    This domain shows strong security
+                    signals. It uses high-grade encryption,
+                    has a long-standing registration history,
+                    and no known associations with phishing
+                    or malware campaigns. You can browse
+                    and transact with confidence. 
+                </p>
+            </div>
+ 
+        </section>
+   )
 }
