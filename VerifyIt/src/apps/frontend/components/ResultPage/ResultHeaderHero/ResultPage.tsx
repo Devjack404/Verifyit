@@ -1,5 +1,5 @@
-import DomainAnalysisCon from "./LeftDomainInfo.tsx/DomainAnalysisContainer";
-import AnalysisSummarryContainer from "./LeftDomainInfo.tsx/AnalysisSummaryContainer";
+import DomainAnalysisCon from "./LeftDomainConatiner/AnalysisSummaryContainer/DomainCard";
+import AnalysisSummarryContainer from "./LeftDomainConatiner/AnalysisSummaryContainer";
 import AdviceContainer from "./RightAdvice.tsx/AdviceContainer";
 
 export default function ResultPage (){

@@ -1,4 +1,4 @@
-export default function DomainAnalysisContainer (){
+export default function TrustScoreCard (){
     return (
         <div className="bg-gray-50 flex ">
             {/* Left */}
