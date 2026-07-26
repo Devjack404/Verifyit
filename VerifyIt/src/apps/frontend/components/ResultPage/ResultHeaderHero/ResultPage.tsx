@@ -8,7 +8,6 @@ export default function ResultPage (){
 
             {/* left container  */}
             <div className="flex-1">
-                <DomainAnalysisCon />
                 <AnalysisSummarryContainer />
             </div>
 

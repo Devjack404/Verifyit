@@ -1,4 +1,4 @@
-export default function TrustScoreCard (){
+export default function DomainCard (){
     return (
         <div className="bg-gray-50 flex ">
             {/* Left */}
