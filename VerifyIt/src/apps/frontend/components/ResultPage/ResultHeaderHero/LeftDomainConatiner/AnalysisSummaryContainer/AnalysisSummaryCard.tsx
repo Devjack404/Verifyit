@@ -7,12 +7,12 @@ export default function AnalysisSummarryCard (){
                 </p>
             </div>
 
-            <div className="mt-5">
-                <h3 className="text-2xl font-semibold">
+            <div className="p-4 mt-5 rounded-2xl bg-gray-100">
+                <h3 className="text-lg font-semibold">
                     Analysis Summary
                 </h3>
 
-                <p className="mt-3 leading-7 text-gray-600">
+                <p className="mt-3 leading-7 w-80 text-gray-600">
                     This domain shows strong security
                     signals. It uses high-grade encryption,
                     has a long-standing registration history,
