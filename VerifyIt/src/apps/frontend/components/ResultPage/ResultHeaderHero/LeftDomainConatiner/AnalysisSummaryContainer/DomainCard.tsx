@@ -1,6 +1,6 @@
 export default function DomainCard (){
     return (
-        <div className="bg-gray-50 flex">
+        <div className="bg-gray-50 gap-14 flex">
             {/* Left */}
             <div>
                 <h2 className="text-3xl font-bold">example-secure-shop.com</h2>
@@ -10,11 +10,11 @@ export default function DomainCard (){
 
             {/* Rigth */}
             <div className="flex gap-3">
-                <button className="rounded-full border px-5 py-2 text-sm hover:bg-gray-100">
+                <button className="rounded-full leading-0 border px-9 py-0 text-sm hover:bg-gray-100">
                     Share
                 </button>            
 
-                <button className="rounded-full border px-5 py-2 text-sm hover:bg-gray-100">
+                <button className="rounded-full leading-0 border px-5 py-0 text-sm hover:bg-gray-100">
                     Copy Link
                 </button>
             </div>
