@@ -1,4 +1,4 @@
-export default function AnalysisSummarryContainer (){
+export default function AnalysisSummarryCard (){
     return (
         <div className="flex flex-col">
             <div>

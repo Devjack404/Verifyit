@@ -1,4 +1,3 @@
-import DomainAnalysisCon from "./LeftDomainConatiner/AnalysisSummaryContainer/DomainCard";
 import AnalysisSummarryContainer from "./LeftDomainConatiner/AnalysisSummaryContainer";
 import AdviceContainer from "./RightAdvice.tsx/AdviceContainer";
 
@@ -9,6 +8,7 @@ export default function ResultPage (){
             {/* left container  */}
             <div className="flex">
                 <AnalysisSummarryContainer />
+
             </div>
 
             {/* Right Container */}
