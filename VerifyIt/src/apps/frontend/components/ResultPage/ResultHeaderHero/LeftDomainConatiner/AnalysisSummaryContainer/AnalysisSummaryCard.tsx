@@ -1,18 +1,18 @@
 export default function AnalysisSummarryCard (){
     return (
-        <div className="flex flex-col">
+        <div className="flex-1">
             <div>
-                <p>
+                <p className="inline-block rounded-full bg-green-100 px-3 py-1 text-sm text-green-700">
                     LOW RISK (SAFE)
                 </p>
             </div>
 
-            <div>
-                <h3>
+            <div className="mt-5">
+                <h3 className="text-2xl font-semibold">
                     Analysis Summary
                 </h3>
 
-                <p>
+                <p className="mt-3 leading-7 text-gray-600">
                     This domain shows strong security
                     signals. It uses high-grade encryption,
                     has a long-standing registration history,

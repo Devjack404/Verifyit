@@ -1,6 +1,6 @@
 export default function DomainCard (){
     return (
-        <div className="bg-gray-50 flex ">
+        <div className="bg-gray-50 flex">
             {/* Left */}
             <div>
                 <h2 className="text-3xl font-bold">example-secure-shop.com</h2>

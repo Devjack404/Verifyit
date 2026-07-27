@@ -1,6 +1,6 @@
 export default function TrustScoreCard(){
     return( 
-        <div className="rounded-full border w-50 h-50 text-center justify-center">
+        <div className="flex flex-col border-8 rounded-full border-blue-500 w-50 h-50 items-center justify-center">
             <h3>82</h3>
             <p>TRUST SCORE</p> 
         </div>
