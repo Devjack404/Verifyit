@@ -12,7 +12,7 @@ export default function AnalysisSummarryCard (){
                     Analysis Summary
                 </h3>
 
-                <p className="mt-3 leading-7 w-80 text-gray-600">
+                <p className="mt-3 leading-7 w-100 text-gray-600">
                     This domain shows strong security
                     signals. It uses high-grade encryption,
                     has a long-standing registration history,
