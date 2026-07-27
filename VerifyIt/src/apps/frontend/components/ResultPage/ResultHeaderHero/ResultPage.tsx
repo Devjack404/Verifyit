@@ -7,7 +7,7 @@ export default function ResultPage (){
         <section className="mx-auto flex max-w-7xl gap-8 px-6 pt-20">
 
             {/* left container  */}
-            <div className="flex-1">
+            <div className="flex">
                 <AnalysisSummarryContainer />
             </div>
 
