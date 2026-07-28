@@ -1,4 +1,4 @@
-import ResultPage from "../components/ResultPage/ResultHeaderHero/ResultPage";
+import ResultPage from "../components/ResultPage/ResultPage";
 
 export default function DisplayResultPage (){
     return (

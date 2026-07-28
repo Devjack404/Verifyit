@@ -1,5 +1,5 @@
-import AnalysisSummarryContainer from "./LeftDomainConatiner/AnalysisSummaryContainer";
-import AdviceContainer from "./RightAdvice.tsx/AdviceContainer";
+import AnalysisSummarryContainer from "./AnalysisSummaryContainer";
+import AdviceContainer from "./AdviceContainer";
 
 export default function ResultPage (){
     return (

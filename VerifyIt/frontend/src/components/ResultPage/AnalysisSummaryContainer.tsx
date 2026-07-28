@@ -1,6 +1,6 @@
-import DomainCard from "./AnalysisSummaryContainer/DomainCard"
-import TrustScoreCard from "./AnalysisSummaryContainer/TrustScoreCard"
-import AnalysisSummarryCard from "./AnalysisSummaryContainer/AnalysisSummaryCard"
+import DomainCard from "./DomainCard"
+import TrustScoreCard from "./TrustScoreCard"
+import AnalysisSummarryCard from "./AnalysisSummaryCard"
 
 export default function AnalysisSummarryContainer (){
     return (
