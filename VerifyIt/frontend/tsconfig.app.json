@@ -22,5 +22,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "frontend"]
+  "include": ["src", "frontend", "src/main.tsx", "src/App.tsx"]
 }
