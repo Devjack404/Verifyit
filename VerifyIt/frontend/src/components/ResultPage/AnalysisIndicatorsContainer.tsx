@@ -2,7 +2,7 @@ import PositiveFactorsCard from "./PositiveFactorsCard";
 
 export default function AnalysisIndicatorsContainer () {
     return (
-        <div className="flex mb-3 mt-30">
+        <div className="flex w-full mb-30 mt-20 gap-8">
             
             <PositiveFactorsCard />
             <PositiveFactorsCard />

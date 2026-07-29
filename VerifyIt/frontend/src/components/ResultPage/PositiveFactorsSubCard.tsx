@@ -2,7 +2,7 @@ import ShieldIcon from "../icons/ShieldIcon";
 
 export default function PositiveFactorsSubCard() {
     return (
-        <div className="flex bg-green-200">
+        <div className="flex bg-green-100 rounded-lg p-3">
             <ShieldIcon />
             <div className="flex flex-col"> 
                 <h3>Valid SSL Certificate</h3>
