@@ -1,6 +1,13 @@
-export default function PositiveFactorsCard() {
+import ShieldIcon from "../icons/ShieldIcon";
+
+export default function PositiveFactorsSubCard() {
     return (
-        <div>
+        <div className="flex bg-green-200">
+            <ShieldIcon />
+            <div className="flex flex-col"> 
+                <h3>Valid SSL Certificate</h3>
+                <p>Issued by Lets Encrypt, expires in 82 days</p>
+            </div>
             
         </div>
     );

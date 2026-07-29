@@ -1,8 +1,11 @@
-export default function PositiveFactorsSubCard() {
+import PositiveFactorsSubCard from "./PositiveFactorsSubCard";
+
+export default function PositiveFactorsCard() {
     return (
-        <div className="">
-            <h3>Valid SSL Certificate</h3>
-            <p>Issued by Lets Encrypt, expires in 82 days</p>
+        <div className="flex flex-col bg-white p-5">
+            <PositiveFactorsSubCard />
+            <PositiveFactorsSubCard />
+            <PositiveFactorsSubCard />
         </div>
     );
 }
