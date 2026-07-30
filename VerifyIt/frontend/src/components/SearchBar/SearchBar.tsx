@@ -9,7 +9,7 @@ export default function SearchBar (){
     const [url, setUrl] = useState("");
     return (
 
-        <div className="bg-white gap-7 rounded-2xl text-center flex justify-between p-2">
+        <div className="bg-white gap-7 rounded-2xl w-full max-w-5xl text-center flex justify-between p-2">
             <SearchIcon />
             <SearchInput /> 
             <ClearButton onClick={() => setUrl("")} />
