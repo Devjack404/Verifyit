@@ -1,4 +1,4 @@
-import PositiveFactorsSubCard from "./PositiveFactorsSubCard";
+import PositiveFactorsSubCard from "./AnalysisIndicatorsSubCard";
 
 export default function PositiveFactorsCard() {
     return (
