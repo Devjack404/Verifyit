@@ -5,7 +5,7 @@ import AnalysisIndicatorsContainer from "./AnalysisIndicatorsContainer";
 export default function ResultPage (){
     return (
         <>
-            <div className="mx-auto flex max-w-7xl gap-8 px-6 pt-20">
+            <div className="mx-auto flex max-w-7xl gap-8 px-6 pt-10">
 
                 {/* left container  */}
                 <div className="flex">
