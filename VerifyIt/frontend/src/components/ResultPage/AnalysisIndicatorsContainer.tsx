@@ -1,4 +1,4 @@
-import PositiveFactorsCard from "./PositivefactorsCard";
+import PositiveFactorsCard from "./PositiveFactorsCard";
 import AreaAwernessCard from "./AreaAwernessCard";
 
 export default function AnalysisIndicatorsContainer () {

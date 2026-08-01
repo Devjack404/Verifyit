@@ -8,7 +8,7 @@ export default function DomainCard (){
                 <p className="mt-2 text-sm text-gray-500">Analysis Date :</p> 
             </div>
 
-            {/* Rigth */}
+            {/* Right */}
             <div className="flex gap-3">
                 <button className="rounded-full leading-none border px-9 py-0 text-sm hover:bg-gray-100">
                     Share
