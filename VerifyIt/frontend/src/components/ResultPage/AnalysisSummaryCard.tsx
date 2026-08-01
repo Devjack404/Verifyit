@@ -1,6 +1,6 @@
 export default function AnalysisSummarryCard (){
     return (
-        <div className="flex-1">
+        <>
             <div>
                 <p className="inline-block rounded-full bg-green-100 px-3 py-1 text-sm text-green-700">
                     LOW RISK (SAFE)
@@ -23,6 +23,6 @@ export default function AnalysisSummarryCard (){
             </div>
 
 
-        </div>
+        </>
     );
 }
