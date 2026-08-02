@@ -1,4 +1,9 @@
-export default function SearchInput({ value, onChange }) {
+interface SearchInputProps {
+  value : string;
+  onChange : (value : string) => void;
+}
+
+export default function SearchInput({ value, onChange, }: SearchInputProps) {
   return (
     <input
       type="text"
