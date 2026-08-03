@@ -11,7 +11,7 @@
 
 # Overview
 
-![Logo](./VerifyIt/frontend/src/assets/Readme%20Images/VerifyIt%20Preview.png)
+![Logo](./frontend/src/assets/Readme%20Images/VerifyIt%20Preview.png)
 
 VerifyIt adalah aplikasi yang bertujuan membantu pengguna mengevaluasi tingkat kepercayaan suatu website atau tautan.
 
