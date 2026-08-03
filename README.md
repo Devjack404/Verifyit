@@ -53,11 +53,9 @@ Contoh:
 - Website URL Analysis
 - Trust Score
 - Risk Indicators
-- AI Explanation
+- AI Explanation (Rencana)
 - Educational Recommendations
 - History Analysis
-- Authentication
-- Dashboard
 
 ---
 
@@ -89,8 +87,6 @@ Display Score + Explanation
 
 # Architecture
 
-## High Level Architecture
-
 ```mermaid
 graph TD
 
@@ -118,6 +114,8 @@ Kemungkinan akan terdiri dari:
 - Pages
 - Components
 - Assets
+- Constants
+- Features
 
 ---
 
@@ -136,84 +134,17 @@ Kemungkinan terdiri dari:
 
 ---
 
-# Folder Structure
-
-```text
-VerifyIt/
-
-src/
-public/
-assets/
-components/
-pages/
-docker/
-docs/
-
-package.json
-vite.config.ts
-tsconfig.json
-README.md
-```
-
-> Struktur aktual akan diperbarui setelah repository dianalisis.
-
----
-
-# Folder Responsibilities
-
-## src/
-
-Source code utama aplikasi.
-
----
-
-## components/
-
-Komponen UI yang dapat digunakan kembali.
-
----
-
-## pages/
-
-Halaman aplikasi.
-
----
-
-## services/
-
-Komunikasi dengan backend.
-
----
-
-## utils/
-
-Helper functions.
-
----
-
-## assets/
-
-Gambar, icon, font.
-
----
-
-## public/
-
-Static assets.
-
----
-
 # Tech Stack
 
 | Technology | Purpose | Status |
 |------------|----------|---------|
-| React | UI | Belum dipastikan |
-| TypeScript | Type Safety | Belum dipastikan |
-| Vite | Build Tool | Belum dipastikan |
-| Tailwind CSS | Styling | Belum dipastikan |
-| Node.js | Runtime | Belum dipastikan |
-| Express | Backend API | Belum dipastikan |
-| Database | Storage | Belum dipastikan |
+| React | UI | Digunakan |
+| TypeScript | Type Safety | Digunakan |
+| Vite | Build Tool | Digunakan |
+| Tailwind CSS | Styling | Digunakan |
+| Node.js | Runtime | Digunakan |
+| Express | Backend API | Belum Dibuat |
+| Database | Storage | Belum Dibuat |
 
 ---
 
@@ -299,7 +230,7 @@ Response
 
 # Database
 
-Belum ditemukan.
+Belum dibuat.
 
 Apabila project menggunakan database maka dokumentasi akan mencakup:
 
