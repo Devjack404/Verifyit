@@ -274,25 +274,25 @@ git clone https://github.com/Devjack404/Verifyit.git
 ## Install
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Development
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Build
 
 ```bash
-npm run build
+pnpm run build (Belum Jadi)
 ```
 
 ## Production
 
 ```bash
-npm run start
+npm run start (Belum Jadi)
 ```
 
 ---
