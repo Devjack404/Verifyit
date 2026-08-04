@@ -1,6 +1,7 @@
 import AnalysisSummarryContainer from "./AnalysisSummaryContainer";
 import AdviceContainer from "./AdviceContainer";
 import AnalysisIndicatorsContainer from "./AnalysisIndicatorsContainer";
+import UrlChecker from "./UrlChecker";
 
 export default function ResultPage (){
     return (
@@ -25,6 +26,10 @@ export default function ResultPage (){
             <h2 className="font-bold mt-15 text-2xl">Analysis Indicator</h2>
             <div className="text-left">
                 <AnalysisIndicatorsContainer />
+            </div>
+
+            <div>
+                <UrlChecker /> 
             </div>        
         </div>
     );
