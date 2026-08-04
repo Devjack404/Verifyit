@@ -2,6 +2,7 @@ import AnalysisSummarryContainer from "./AnalysisSummaryContainer";
 import AdviceContainer from "./AdviceContainer";
 import AnalysisIndicatorsContainer from "./AnalysisIndicatorsContainer";
 import UrlChecker from "./UrlChecker";
+import AboutSecurityContainer from "./AboutSecurityContainer";
 
 export default function ResultPage (){
     return (
@@ -30,6 +31,11 @@ export default function ResultPage (){
 
             <div>
                 <UrlChecker /> 
+            </div>
+            
+            <h2 className="mt-20 font-bold mt-15 text-2xl">Learn More About Security</h2>
+            <div className="mt-10">
+                <AboutSecurityContainer />     
             </div>        
         </div>
     );
