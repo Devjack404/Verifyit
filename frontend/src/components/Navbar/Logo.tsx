@@ -1,5 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function Logo(){
     return (
-        <h1 className="text-xl font-bold text-blue-800 tracking-tight">VerifyIt</h1>
+        <Link 
+            to="/" 
+            className="text-xl font-bold text-blue-800 tracking-tight"
+        >
+        VerifyIt
+        </Link>
     );
 }
