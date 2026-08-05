@@ -4,7 +4,7 @@ import AnalysisSummarryCard from "./AnalysisSummaryCard"
 
 export default function AnalysisSummarryContainer (){
     return (
-        <section className="w-fullbg-gray-50 p-10 rounded-2xl ">
+        <section className="w-full bg-gray-50 p-10 rounded-2xl ">
             <DomainCard />
 
             <div className="flex items-start gap-15 mt-10">

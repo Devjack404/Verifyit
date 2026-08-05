@@ -10,7 +10,7 @@ export default function DomainCard (){
 
             {/* Right */}
             <div className="flex gap-3">
-                <button className="rounded-full leading-none border px-9 py-0 text-sm hover:bg-gray-100">
+                <button className="rounded-full border px-9 py-3 text-sm hover:bg-gray-100">
                     Share
                 </button>            
 
