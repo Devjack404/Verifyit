@@ -8,7 +8,7 @@ export default function ResultPage (){
     return (
         <div className="w-full max-w-7xl">
             {/* Analysis Summary Container */}
-            <div className="w-full flex pt-10">
+            <div className="w-full gap-10 flex pt-10">
 
                 {/* left container  */}
                 <div className="flex-1">

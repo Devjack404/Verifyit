@@ -5,16 +5,16 @@ export default function DomainCard (){
             <div>
                 <h2 className="text-3xl font-bold">example-secure-shop.com</h2>
 
-                <p className="mt-2 text-sm text-gray-500">Analysis Date :</p> 
+                <p className="mt-2 text-sm text-gray-500">Analysis Date : Oct 24, 2023 | 14 : 32 WIB</p> 
             </div>
 
             {/* Right */}
             <div className="flex gap-3">
-                <button className="rounded-full border px-9 py-3 text-sm hover:bg-gray-100">
+                <button className="rounded-full border px-6 py-3 text-sm hover:bg-gray-100">
                     Share
                 </button>            
 
-                <button className="rounded-full leading-none border px-5 py-0 text-sm hover:bg-gray-100">
+                <button className="rounded-full leading-none border px-6 py-0 text-sm hover:bg-gray-100">
                     Copy Link
                 </button>
             </div>
