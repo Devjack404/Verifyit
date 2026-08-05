@@ -8,7 +8,7 @@ export default function ResultPage (){
     return (
         <div className="w-full max-w-7xl">
             {/* Analysis Summary Container */}
-            <div className="w-full gap-10 flex pt-10">
+            <div className="w-full gap-10 flex pt-10 items-stretch">
 
                 {/* left container  */}
                 <div className="flex-1">
@@ -16,7 +16,7 @@ export default function ResultPage (){
                 </div>
 
                 {/* Right Container */}
-                <div className="w-96 shrink-0">
+                <div className="flex w-96 shrink-0">
                     <AdviceContainer />
                 </div>
 
@@ -33,7 +33,7 @@ export default function ResultPage (){
                 <UrlChecker /> 
             </div>
             
-            <h2 className="mt-20 font-bold mt-15 text-2xl">Learn More About Security</h2>
+            <h2 className="mt-20 font-bold text-2xl">Learn More About Security</h2>
             <div className="mt-10">
                 <AboutSecurityContainer />     
             </div>        

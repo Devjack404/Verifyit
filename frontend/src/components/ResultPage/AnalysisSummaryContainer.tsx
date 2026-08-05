@@ -15,5 +15,5 @@ export default function AnalysisSummarryContainer (){
                 </div>
             </div>
         </div>
-   )
+    )
 }

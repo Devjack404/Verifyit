@@ -2,7 +2,7 @@ import ShieldIcon from "../icons/ShieldIcon";
 
 export default function AdviceContainer() {
   return (
-    <aside className="w-full rounded-2xl bg-blue-700 p-8 text-white shadow-lg">
+    <aside className="w-full flex-col flex rounded-2xl h-full bg-blue-700 p-8 text-white shadow-lg">
 
       <div className="flex items-center gap-3">
         <ShieldIcon />
@@ -20,7 +20,7 @@ export default function AdviceContainer() {
 
       <button
         className="
-          mt-10
+          mt-auto
           w-full
           rounded-full
           bg-white
