@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import AnalyzePage from "./pages/AnalyzePage";
 import DisplayResultPage from "./pages/DisplayResultPage";
+import LandingPageAnalyze from "./pages/LandingPageAnalyze";
 
 export default function App() {
   return (
@@ -12,8 +13,9 @@ export default function App() {
 
       <main className="flex-1 ">
         <Routes>
-          <Route path="/" element={<AnalyzePage />} />
+          <Route path="/analyze" element={<AnalyzePage />} />
           <Route path="/result" element={<DisplayResultPage />} />
+          <Route path="/" element={<LandingPageAnalyze />} />
         </Routes>
       </main>
 
