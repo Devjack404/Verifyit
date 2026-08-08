@@ -1,12 +1,4 @@
-import HeroSection from "../components/LandingPageAnalyze/HeroSection"
-
+import HeroSectionContainer from "../components/LandingPageAnalyze/HeroSectionContainer"
 export default function LandingPageAnalyze (){
-    return (
-        <>
-            <div className="flex items-center justify-center w-full">
-                <HeroSection />          
-            </div>
- 
-        </>
-    )
+    return <HeroSectionContainer />           
 }

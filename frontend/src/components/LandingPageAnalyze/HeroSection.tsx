@@ -2,9 +2,9 @@ import SearchBar from "../SearchBar/SearchBar"
 
 export default function HeroSection () {
     return (
-        <div className="flex">
-            <div >
-                <h1>Verify Website trust with VerfyIt</h1>
+        <div className="flex gap-10 ">
+            <div>
+                <h1 className="font-bold text-4xl">Verify Website trust with VerfyIt</h1>
                 <p>
                     Don't let deceptive websites compromise your security. Our AI-
                     driven engine provides instant clarity on site safety, transparency,
