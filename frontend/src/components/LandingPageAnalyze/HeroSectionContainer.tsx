@@ -2,7 +2,7 @@ import HeroSection from "./HeroSection"
 
 export default function HeroSectionContainer() {
     return (
-        <div className="">
+        <div className="bg-">
             <HeroSection />
         </div>
     )
