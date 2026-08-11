@@ -26,25 +26,49 @@ export const stepsCardData : StepsCardProps [] = [
 
 function StepCard({icon, title, description}: StepsCardProps) {
     return (
-        <div>
-            <div>{icon}</div>
-            <h3>{title}</h3>
-            <p>{description}</p> 
+        <div className="relative z-10 flex flex-1 flex-col items-center text-center">
+
+            {/* Icon */}
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md">
+                {icon}
+            </div>
+
+            {/* Title  */}
+            <h3 className="mt-5 text-xl font-semibold text-gray-900">
+                {title}
+            </h3>
+
+            {/* Description */}
+            <p className="mt-4 max-w-xs text-sm leading-6 text-gray-600">
+                {description}
+            </p> 
         </div>
     );
 }
 
 export default function StepsSection() {
   return (
-    <section>
-      {stepsCardData.map((step) => (
-        <StepCard
-            key = {step.title}
-            icon = {step.icon}
-            title = {step.title}
-            description ={step.description}
-        />
-      ))}
+    <section className="b px-6 py-16">
+
+        <h2 className="text-center text-3xl font-bold text-gray-900">
+            Three steps to safety
+        </h2>
+
+        {/* Cards */}
+        <div className="relative mx-auto mt-14 flex max-w-5xl flex-col gap-12 md:flex-row md:gap-8" >
+            
+            {/* Dashed line */}
+            <div className="absolute left-[16.67%] right-[16.67%] top-8 hidden border-t-2 border-dashed border-gray-300 md:block" />
+
+            {stepsCardData.map((step) => (
+                <StepCard
+                    key = {step.title}
+                    icon = {step.icon}
+                    title = {step.title}
+                    description ={step.description}
+                />
+            ))}
+        </div>
     </section>
   );
 }
