@@ -48,7 +48,7 @@ function StepCard({icon, title, description}: StepsCardProps) {
 
 export default function StepsSection() {
   return (
-    <section className="b px-6 py-16">
+    <section className="px-6 py-16">
 
         <h2 className="text-center text-3xl font-bold text-gray-900">
             Three steps to safety
