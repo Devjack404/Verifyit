@@ -47,7 +47,7 @@ export const features : Feature[] =  [
         description :
             "Learn as you browse. Our tool explains security jargon in simple English, making you a smarter netizen.",
         icon : <ShieldIcon />,
-        iconClassName:"bg-orang-100 text-orange-900",
+        iconClassName:"bg-orange-100 text-orange-900",
         gridClassName : "md:col-span-2"
     }
 ];
