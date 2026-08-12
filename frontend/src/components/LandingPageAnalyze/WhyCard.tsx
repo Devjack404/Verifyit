@@ -1,9 +1,20 @@
+import { type ReactNode } from "react"
+import ShieldIcon from "../icons/ShieldIcon"
+
+export interface WhyCardProps {
+    icon : ReactNode,
+    title : string,
+    description : string,
+}
+
+
+
 export default function WhyCard () {
     return (
         <section className="py-16 px-6 flex">
             <div className="flex-col">
                 <h2>Built for the modern web, designed for humans</h2>
-
+                
                 
             </div>
 
