@@ -11,9 +11,9 @@ export interface WhyCardProps {
 
 export default function WhyCard () {
     return (
-        <section className="py-16 px-6 flex">
+        <section className="py-10 px-10 gap-10 flex">
             <div className="flex-col">
-                <h2>Built for the modern web, designed for humans</h2>
+                <h2 className="text-left text-3xl font-medium text-gray-900">Built for the modern web, designed for humans</h2>
                 
                 
             </div>
