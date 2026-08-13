@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import ShieldIcon from "../icons/ShieldIcon";
 
-export interface Feature {
+export interface FeatureProps {
     title : string;
     description : string;
     icon : ReactNode;
@@ -9,7 +9,7 @@ export interface Feature {
     gridClassName : string;
 }
 
-export const features : Feature[] =  [
+export const features : FeatureProps[] =  [
     {
         title : "Website Verification",
         description : 

@@ -7,6 +7,31 @@ export interface WhyCardProps {
     description : string,
 }
 
+export const WhyCardData : WhyCardProps[] = [
+    {
+        icon : <ShieldIcon />,
+        title : "Easy to Understand",
+        description : "No complex jargon. We provide clear, plain-language insights."
+    },
+    {
+        icon : <ShieldIcon />,
+        title : "Transparent",
+        description : "We show our work. See exactly why a score was assigned."
+    },
+    {
+        icon : <ShieldIcon />,
+        title : "Privacy Friendly",
+        description : "Your searches are private. We never track your browsing history."
+    },
+    {
+        icon : <ShieldIcon />,
+        title : "Educational",
+        description : "Improve your security IQ with every single verification."
+    },
+]
+
+
+
 
 
 export default function WhyCard () {

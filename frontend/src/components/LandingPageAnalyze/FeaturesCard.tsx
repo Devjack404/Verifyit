@@ -1,7 +1,7 @@
-import type { Feature } from "./features.data";
+import type { FeatureProps } from "./features.data";
 
 interface FeatureCardProps {
-    feature : Feature;
+    feature : FeatureProps;
 }
 
 export default function FeaturesCard({
