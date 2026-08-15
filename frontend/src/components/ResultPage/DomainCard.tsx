@@ -1,3 +1,5 @@
+import ShieldIcon from "../icons/ShieldIcon"
+
 export default function DomainCard (){
     return (
         <div className="flex w-full items-start justify-between bg-gray-50 ">
@@ -10,11 +12,13 @@ export default function DomainCard (){
 
             {/* Right */}
             <div className="flex gap-3">
-                <button className="rounded-full border px-6 py-3 text-sm hover:bg-gray-100">
+                <button className="rounded-full flex gap-2 border px-7 py-3 text-sm hover:bg-gray-100">
+                    <ShieldIcon />
                     Share
                 </button>            
 
-                <button className="rounded-full leading-none border px-6 py-0 text-sm hover:bg-gray-100">
+                <button className="rounded-full flex gap-2 border px-7 py-3 text-sm hover:bg-gray-100">
+                    <ShieldIcon />
                     Copy Link
                 </button>
             </div>
