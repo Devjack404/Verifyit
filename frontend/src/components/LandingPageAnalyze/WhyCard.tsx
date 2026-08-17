@@ -40,7 +40,29 @@ export default function WhyCard () {
             <div className="flex-col">
                 <h2 className="text-left text-3xl font-medium text-gray-900">Built for the modern web, designed for humans</h2>
                 
-                
+                <div className="mt-8 space-y-6">
+                    {WhyCardData.map((card) => (
+                        <div key={card.title} className="flex gap-4">
+                            <div>
+                                {card.icon}
+                            </div>
+
+                            <div>
+                                <div className="font-medium text-lg">
+                                    {card.title}
+                                </div>
+
+                                <p className="text-gray-600">
+                                    {card.description }
+                                </p>
+                            </div>
+
+                        </div>
+                    ))} 
+ 
+
+                </div>
+               
             </div>
 
             <div>
