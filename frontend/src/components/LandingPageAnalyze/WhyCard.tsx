@@ -36,8 +36,8 @@ export const WhyCardData : WhyCardProps[] = [
 
 export default function WhyCard () {
     return (
-        <section className="py-10 px-10 gap-10 flex  bg-white">
-            <div className="flex-col">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-20 px-10 ">
+            <div className="flex-col mt-10">
                 <h2 className="text-left text-3xl font-medium text-gray-900">Built for the modern web, designed for humans</h2>
                 
                 <div className="mt-8 grid grid-cols-2 gap-5 ">
@@ -73,9 +73,6 @@ export default function WhyCard () {
                     />  
                 </div>
            </div>
-
-
-        
         </section>
     )
     
