@@ -36,27 +36,26 @@ export const WhyCardData : WhyCardProps[] = [
 
 export default function WhyCard () {
     return (
-        <section className="py-10 px-10 gap-10 flex">
+        <section className="py-10 px-10 gap-10 flex  bg-white">
             <div className="flex-col">
                 <h2 className="text-left text-3xl font-medium text-gray-900">Built for the modern web, designed for humans</h2>
                 
-                <div className="mt-8 space-y-6">
+                <div className="mt-8 grid grid-cols-2 gap-5 ">
                     {WhyCardData.map((card) => (
-                        <div key={card.title} className="flex gap-4">
-                            <div>
+                        <div key={card.title} className="bg-gray-100 p-6 rounded-2xl">
+                            <div className="mb-4 text-blue-600">
                                 {card.icon}
                             </div>
 
                             <div>
-                                <div className="font-medium text-lg">
+                                <div className="font-semibold text-lg text-gray-900">
                                     {card.title}
                                 </div>
 
-                                <p className="text-gray-600">
+                                <p className="mt-2 text-gray-600 leading-relaxed">
                                     {card.description }
                                 </p>
                             </div>
-
                         </div>
                     ))} 
  
@@ -65,14 +64,15 @@ export default function WhyCard () {
                
             </div>
 
-            <div>
-                <img 
-                    src="https://i.pinimg.com/1200x/81/5e/06/815e06f77247d1c8fc341ba3b8552cfc.jpg" 
-                    alt="Web Analyze Ilustration"
-                    className="w-full rounded-2xl"
-                >
-                </img>  
-            </div>
+            <div className="flex items-center">
+                <div className="rounded-[2rem] bg-blue-50 p-4">
+                   <img 
+                       src="https://i.pinimg.com/1200x/81/5e/06/815e06f77247d1c8fc341ba3b8552cfc.jpg" 
+                       alt="Web Analyze Ilustration"
+                       className="w-full rounded-2xl"
+                    />  
+                </div>
+           </div>
 
 
         
