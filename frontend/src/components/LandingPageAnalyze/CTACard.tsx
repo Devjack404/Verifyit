@@ -1,6 +1,6 @@
 export default function CTACard() {
     return (
-        <section className="px-50 pb-20">
+        <section className="px-50 pb-15">
             <div className=" mx-auto w-full max-w-5xl rounded-3xl bg-blue-800 p-10 text-center">
                 
                 <h2 className="text-4xl font-bold text-white">

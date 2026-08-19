@@ -22,7 +22,7 @@ export const features : FeatureProps[] =  [
         title : "TrustScore",
         description : 
             "A clear 0-100 score based on 15+ security signals, giving you an instant verdict on any digital entity.",
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-chart-histogram"></i>,
         iconClassName : "bg-green-100 text-green-600",
         gridClassName : "md:col-span-3",
     },
@@ -30,7 +30,7 @@ export const features : FeatureProps[] =  [
         title : "Transparent Analysis",
         description :
             "We don't just say 'unsafe'. We show you exactly why, from expired certificates to flagged scripts.",
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-eye"></i>,
         iconClassName : "bg-orange-100 text-orange-600",
         gridClassName : "md:col-span-2",
     },
@@ -38,7 +38,7 @@ export const features : FeatureProps[] =  [
         title : "Actionable Advice",
         description :
             "Get clear next steps: whether to proceed with caution or immediately leave the site for your safety.",
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rs-social-network"></i>,
         iconClassName:"bg-blue-100 text-blue-600",
         gridClassName : "md:col-span-2"
     },
@@ -46,7 +46,7 @@ export const features : FeatureProps[] =  [
         title : "Security Literacy",
         description :
             "Learn as you browse. Our tool explains security jargon in simple English, making you a smarter netizen.",
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-book-bookmark"></i>,
         iconClassName:"bg-orange-100 text-orange-900",
         gridClassName : "md:col-span-2"
     }
