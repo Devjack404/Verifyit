@@ -9,22 +9,22 @@ export interface WhyCardProps {
 
 export const WhyCardData : WhyCardProps[] = [
     {
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-smile-beam text-blue-800"></i>,
         title : "Easy to Understand",
         description : "No complex jargon. We provide clear, plain-language insights."
     },
     {
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-transparency text-blue-800"></i>,
         title : "Transparent",
         description : "We show our work. See exactly why a score was assigned."
     },
     {
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-lock text-blue-800"></i>,
         title : "Privacy Friendly",
         description : "Your searches are private. We never track your browsing history."
     },
     {
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-head-side-thinking"></i>,
         title : "Educational",
         description : "Improve your security IQ with every single verification."
     },
