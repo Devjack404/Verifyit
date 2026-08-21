@@ -38,7 +38,7 @@ export const features : FeatureProps[] =  [
         title : "Actionable Advice",
         description :
             "Get clear next steps: whether to proceed with caution or immediately leave the site for your safety.",
-        icon : ,
+        icon : <i className="fi fi-rr-social-network"></i>,
         iconClassName:"bg-blue-100 text-blue-600",
         gridClassName : "md:col-span-2"
     },
