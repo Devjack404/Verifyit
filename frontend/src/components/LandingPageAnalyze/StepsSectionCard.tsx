@@ -9,15 +9,15 @@ export interface StepsCardProps {
 
 export const stepsCardData : StepsCardProps [] = [
     {
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-paste text-blue-800"></i>,
         title : "1. Paste a URL",
         description : "Copy the website address you're curious about and paste it into our analyzer"
     },   {
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-assessment text-blue-800"></i>,
         title : "2. Verify",
         description : "Our engine runs deep scans across global security databases and site metadata."
     },   {
-        icon : <ShieldIcon />,
+        icon : <i className="fi fi-rr-task-checklist text-blue-800"></i>,
         title : "3. Understand Result",
         description : "Receive a comprehensive trust report that tells you exactly what to expect."
     },
