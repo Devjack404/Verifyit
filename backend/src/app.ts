@@ -1,5 +1,6 @@
 import express, {type Express, type Request, type Response} from 'express';
 import cors from "cors";
+import routerHealth from './routes/health.routes';
 
 const app : Express = express();
 
@@ -10,10 +11,6 @@ app.get('/', (req, res) => {
     res.send('VerifyIt API is runing')
 });
 
-app.get('/api/health', (req, res) => {
-    res.json({
-        status : "OK"
-    })
-});
+app.use("/api", routerHealth)
 
 export default app;
