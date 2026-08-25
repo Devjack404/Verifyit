@@ -8,9 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('VerifyIt API is runing')
+    res.send('VerifyIt API is runing');
 });
 
-app.use("/api", routerHealth)
+app.use("/api", routerHealth);
 
 export default app;
