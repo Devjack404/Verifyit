@@ -1,13 +1,6 @@
-import { Router } from "express";
-import { analyzeUrlService } from "../services/analyze.service";
+import type { Request, Response } from "express";
 
-export const analyzeUrl = (
-    req : Request,
-    res : Response
-) => {
-    const { url } = req.body;
 
-    const result = 
-
-    res.json(result)
+export const AnalyzeUrl = (req : Request, res : Response) => {
+    const Url = req
 }
