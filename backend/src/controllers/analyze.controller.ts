@@ -2,5 +2,10 @@ import type { Request, Response } from "express";
 
 
 export const AnalyzeUrl = (req : Request, res : Response) => {
-    const Url = req
+    const url = req.body
+    console.log(url)
+
+    res.json ({
+        url : url
+    })
 }

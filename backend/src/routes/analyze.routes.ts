@@ -1,15 +1,8 @@
 import { Router } from "express";
-import type { Request, Response } from "express";
+import { AnalyzeUrl } from "../controllers/analyze.controller";
 
 const routerAnalyze = Router();
 
-routerAnalyze.post("/analyze", (req, res) => {
-    const url = req.body.url;
-    console.log(url)
-
-    res.json({
-        url : url
-    })
-});
+routerAnalyze.post("/analyze", AnalyzeUrl);
 
 export default routerAnalyze;
