@@ -14,6 +14,4 @@ app.get('/', (req, res) => {
 
 app.use("/api", routerAnalyze);
 
-app.use("/api", routerHealth);
-
 export default app;

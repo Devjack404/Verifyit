@@ -1,6 +1,6 @@
 export const analyzeUrlService = (url : string) => {
     return {
-        url,
+       url,
         score : 80,
         status : "safe"
     }
