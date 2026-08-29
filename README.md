@@ -130,9 +130,8 @@ Kemungkinan terdiri dari:
 - Routes
 - Controllers
 - Services
-- Models
 - Middleware
-- Database Layer
+- Database 
 
 ---
 
@@ -145,20 +144,12 @@ Kemungkinan terdiri dari:
 | Vite | Build Tool | Digunakan |
 | Tailwind CSS | Styling | Digunakan |
 | Node.js | Runtime | Digunakan |
-| Express | Backend API | Belum Dibuat |
+| Express | Backend API | Sedang Dibuat |
 | Database | Storage | Belum Dibuat |
 
 ---
 
 # API Documentation
-
-## Authentication
-
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| POST | /api/auth/login | Login |
-
----
 
 ## Website Analysis
 
@@ -294,7 +285,7 @@ pnpm run build (Belum Jadi)
 ## Production
 
 ```bash
-npm run start (Belum Jadi)
+pnpm run start (Belum Jadi)
 ```
 
 ---
@@ -313,20 +304,24 @@ Contoh deployment:
 
 # Troubleshooting
 
-## npm install gagal
+## pnpm install gagal
 
 Solusi:
 
 - Hapus node_modules
 - Hapus package-lock.json
-- Jalankan kembali npm install
+- Jalankan kembali pnpm install
 
 ---
 
 ## Port sudah digunakan
-
+Backend  :
 ```bash
-lsof -i :3000
+lsof -i :3000 
+```
+Frontend :
+```
+lsof -i :5173
 ```
 
 ---
@@ -405,18 +400,6 @@ chore:
 
 ---
 
-# Roadmap
-
-- [ ] Authentication
-- [ ] Dashboard
-- [ ] URL Analysis
-- [ ] AI Recommendation
-- [ ] History
-- [ ] Export Report
-- [ ] Admin Panel
-
----
-
 # License
 
 MIT License
@@ -425,7 +408,7 @@ MIT License
 
 # Author
 
-Juan Richard Samarera Sabarofek
+Devjack404
 
 ---
 
