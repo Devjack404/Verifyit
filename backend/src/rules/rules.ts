@@ -8,11 +8,16 @@ function checkUsesIP(urlText : string): string {
 
         const ipVersion = net.isIP(domain)
         
-        if(ipVersion !== 0) {
-            console.log(`Warning: Hostname "${domain}" terdeteksi menggunakan alamat IP.`)
+        if(ipVersion === 4) {
+            console.log(`Warning : Hostname "${domain}" terdeteksi sebagai IPV4.`)
             return "Peringatan : URL ini menggunakan Alamat IP, bukan domain resmi !"
-        }    
-
+        }
+        if(ipVersion === 6) {
+            console.log(`Warning : Hostname "${domain}" terdeteksi sebagai IPV6.`)
+            return "Peringatan : URL ini menggunakan Alamat IP, bukan domain resmi !"
+        }
+        
+        
         console.log(`[LOG] Info: Hostname '${domain}' menggunakan domain biasa.`);
         return "Aman : URL menggunakan domain biasa";
     }
@@ -24,4 +29,4 @@ function checkUsesIP(urlText : string): string {
 
 }
 
-console.log(checkUsesIP("http://1.1.1.1"));
+console.log(checkUsesIP("http://2001:4860:4860::8888"));
