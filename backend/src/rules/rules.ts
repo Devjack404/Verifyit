@@ -1,17 +1,27 @@
-function checkUseIP(urlText : string) {
-    const urlObject = new URL(urlText);
-    const domain = urlObject.hostname;
+import net from 'node:net';
 
-    const splitDomain = domain.split(".");
 
-    const isFourPart = splitDomain.length === 4;
-    const isAllNumbers = splitDomain.every(item => !isNaN(Number(item)));
+function checkUsesIP(urlText : string): string {
+    try {
+        const urlObject = new URL(urlText);
+        const domain = urlObject.hostname;
+
+        const ipVersion = net.isIP(domain)
         
+        if(ipVersion !== 0) {
+            console.log(`Warning: Hostname "${domain}" terdeteksi menggunakan alamat IP.`)
+            return "Peringatan : URL ini menggunakan Alamat IP, bukan domain resmi !"
+        }    
 
-    if(isFourPart && isAllNumbers) {
-        return "Peringatan : URL ini menggunakana Alamat IP, bukan domain resmi !"
+        console.log(`[LOG] Info: Hostname '${domain}' menggunakan domain biasa.`);
+        return "Aman : URL menggunakan domain biasa";
     }
 
-    return "Aman : URL menggunakan domain biasa"
+    catch {
+        console.error(`[LOG] Error: Format URL '${urlText}' tidak valid! Khusus URL wajib menggunakan protokol (contoh: http:// atau https://).`);
+        return "Error : Format URL tidak valid";
+    }
 
 }
+
+console.log(checkUsesIP("http://1.1.1.1"));
