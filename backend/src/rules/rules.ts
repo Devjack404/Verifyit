@@ -5,8 +5,9 @@ function checkUsesIP(urlText : string): string {
     try {
         const urlObject = new URL(urlText);
         const domain = urlObject.hostname;
+        const ipAddres = domain.replace(/^\[|\]$/g, "")
 
-        const ipVersion = net.isIP(domain)
+        const ipVersion = net.isIP(ipAddres)
         
         if(ipVersion === 4) {
             console.log(`Warning : Hostname "${domain}" terdeteksi sebagai IPV4.`)
@@ -29,4 +30,4 @@ function checkUsesIP(urlText : string): string {
 
 }
 
-console.log(checkUsesIP("http://2001:4860:4860::8888"));
+console.log(checkUsesIP("http://[2001:4860:4860::8888]"));
