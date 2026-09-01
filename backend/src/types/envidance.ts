@@ -4,5 +4,5 @@ type Envidence = {
     type : string,
     severity : Severity,
     score : number,
-    
+    message : string;
 }

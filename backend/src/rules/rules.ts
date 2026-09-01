@@ -5,9 +5,9 @@ function checkUsesIP(urlText : string): string {
     try {
         const urlObject = new URL(urlText);
         const domain = urlObject.hostname;
-        const ipAddres = domain.replace(/^\[|\]$/g, "")
+        const ipAddress = domain.replace(/^\[|\]$/g, "")
 
-        const ipVersion = net.isIP(ipAddres)
+        const ipVersion = net.isIP(ipAddress)
         
         if(ipVersion === 4) {
             console.log(`Warning : Hostname "${domain}" terdeteksi sebagai IPV4.`)
