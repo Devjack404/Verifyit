@@ -5,7 +5,7 @@ function checkUsesIP(urlText : string): string {
     try {
         const urlObject = new URL(urlText);
         const domain = urlObject.hostname;
-        const ipAddress = domain.replace(/^\[|\]$/g, "")
+        const ipAddress = domain.replace(/^\[|\]$/g, "") //implement Regex Ekspresion
 
         const ipVersion = net.isIP(ipAddress)
         
@@ -30,4 +30,3 @@ function checkUsesIP(urlText : string): string {
 
 }
 
-console.log(checkUsesIP("http://[2001:4860:4860::8888]"));
