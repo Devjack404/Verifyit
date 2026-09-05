@@ -1,11 +1,17 @@
 import express, {type Express, type Request, type Response} from 'express';
+import cors from "cors";
+import routerHealth from './routes/health.routes';
+import routerAnalyze from './routes/analyze.routes';
 
 const app : Express = express();
 
-app.get('/', (req: request, res: Response) => {
-    res.send('Hello World')
+app.use(cors());
+app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.send('VerifyIt API is runing');
 });
 
-app.listen(3000, () => {
-    console.log("Server running on http://localhost:3000")
-});
+app.use("/api", routerAnalyze);
+
+export default app;
