@@ -18,4 +18,4 @@ function checkProtocol(urlText : string): string {
     }
 }
 
-console.log(checkProtocol("https://example.com"))
+export default checkProtocol(());
