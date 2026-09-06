@@ -4064,5 +4064,3 @@ See the `LICENSE` file for more information.
 
 ```
 
-Ini sudah cocok dijadikan **`CONTRIBUTING.md` di root repository VerifyIt**.
-```
