@@ -16,7 +16,12 @@ export default function SearchBar (){
                 onChange={setUrl} 
             /> 
             <ClearButton onClick={() => setUrl("")} />
-            <AnalyzeButton />
+
+            <AnalyzeButton onClick={() => console.log(setUrl) }/>
         </div>
     );
+
 }
+
+
+console.log(SearchBar())
