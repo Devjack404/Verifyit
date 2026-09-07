@@ -6,7 +6,7 @@ export default function AnalyzeButton ({url } : analyzeButtonProps){
     const handleAnalyze = () => {
         console.log(url);
     }
-
+    
     return (
         <button
             onClick={handleAnalyze} 

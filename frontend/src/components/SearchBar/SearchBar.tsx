@@ -7,14 +7,16 @@ import { useState } from "react";
 
 export default function SearchBar (){
     const [url, setUrl] = useState("");
-    return (
 
+    return (
         <div className="bg-white gap-7 rounded-2xl w-full text-center flex justify-between p-2">
             <SearchIcon />
+
             <SearchInput 
                 value={url}
                 onChange={setUrl} 
             /> 
+
             <ClearButton onClick={() => setUrl("")} />
 
             <AnalyzeButton url={url}
@@ -24,5 +26,3 @@ export default function SearchBar (){
 
 }
 
-
-console.log(SearchBar())
