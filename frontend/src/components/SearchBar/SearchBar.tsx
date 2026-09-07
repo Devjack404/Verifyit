@@ -17,7 +17,8 @@ export default function SearchBar (){
             /> 
             <ClearButton onClick={() => setUrl("")} />
 
-            <AnalyzeButton onClick={() => console.log(setUrl) }/>
+            <AnalyzeButton url={url}
+            />
         </div>
     );
 
