@@ -3,9 +3,25 @@ type analyzeButtonProps = {
 }
 
 export default function AnalyzeButton ({url } : analyzeButtonProps){
-    const handleAnalyze = () => {
-        console.log(url);
+    const handleAnalyze = async () => {
+        console.log("URL", url);
+        
+        
+        const response = await fetch ("http://localhost:3000/api/analyze", {
+            method : "POST",
+            headers : {
+                "Content-type" : "application/json",
+            },
+            body : JSON.stringify({
+                url : url,
+            }),
+        });
+
+        const dataService  = await response.json();
+
+        console.log(dataService);
     }
+
     
     return (
         <button
