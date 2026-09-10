@@ -18,7 +18,7 @@ function checkUsesIP(urlText : string): string {
             return "Peringatan : URL ini menggunakan Alamat IP, bukan domain resmi !"
         }
         
-        
+       
         console.log(`[LOG] Info: Hostname '${domain}' menggunakan domain biasa.`);
         return "Aman : URL menggunakan domain biasa";
     }

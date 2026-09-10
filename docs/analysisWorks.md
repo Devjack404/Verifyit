@@ -43,7 +43,7 @@ Sistem menghasilkan **evidence + skor risiko**, bukan vonis langsung "SCAM"/"AMA
 **Komponen MVP (5 bagian):**
 1. **URL Parser** — pecah URL jadi hostname, path, protocol, dll.
 2. **Rule Engine** — cek sinyal-sinyal mencurigakan (IP sebagai hostname, kata "login"/"verify", punycode, subdomain berlebihan, HTTP vs HTTPS, dll).
-3. **Threat Intelligence** — cek ke database luar: PhishTank (phishing) dan URLhaus (malware).
+4. **Threat Intelligence** — cek ke database luar: PhishTank (phishing) dan URLhaus (malware).
 4. **Risk Scoring** — jumlahkan bobot dari semua evidence yang ketemu → hasilkan skor & level (LOW/MEDIUM/HIGH/CRITICAL).
 5. **Explanation** — tampilkan alasan di balik skor (bukan cuma angka).
 

@@ -17,5 +17,3 @@ function checkProtocol(urlText : string): string {
         return "Eror : Format URL tidak umum";
     }
 }
-
-console.log(checkProtocol("https://example.com"))
