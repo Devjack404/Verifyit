@@ -1,7 +1,17 @@
-export const analyzeUrlService = (url : string) => {
+import { checkProtocol } from "../rules/rulesCheckProtocol"
+import { checkUsesIP } from "../rules/rulesCheckTypeIP";
+
+export function analyzeUrlService (url: string) {
+
+    const protocolResult = checkProtocol(url);
+    console.log(protocolResult)
+
+    const ipResult =  checkUsesIP(url);
+    console.log(ipResult)
+
     return {
-       url,
-        score : 80,
-        status : "safe",
-    }
+        protocolResult,
+        ipResult
+    };
+
 }

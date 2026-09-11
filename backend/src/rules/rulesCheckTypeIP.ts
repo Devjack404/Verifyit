@@ -1,7 +1,7 @@
 import net from 'node:net';
 
 
-function checkUsesIP(urlText : string): string {
+export function checkUsesIP(urlText : string): string {
     try {
         const urlObject = new URL(urlText);
         const domain = urlObject.hostname;

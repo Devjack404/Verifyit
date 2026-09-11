@@ -1,4 +1,6 @@
-function checkProtocol(urlText : string): string {
+import { url } from "node:inspector";
+
+export function checkProtocol(urlText : string): string {
     try{
         const url = new URL(urlText);
 
@@ -17,3 +19,4 @@ function checkProtocol(urlText : string): string {
         return "Eror : Format URL tidak umum";
     }
 }
+
