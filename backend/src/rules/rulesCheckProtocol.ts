@@ -1,5 +1,4 @@
-function checkProtocol(urlText : string): string {
-    try{
+export function checkProtocol(urlText : string): string { try{
         const url = new URL(urlText);
 
         if (url.protocol === "http:") {

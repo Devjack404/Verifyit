@@ -1,11 +1,11 @@
 import type { Request, Response } from "express";
+import { analyzeUrlService } from "../services/analyze.service";
 
+export const analyzeUrlController = (req : Request, res : Response) => {
 
-export const AnalyzeUrl = (req : Request, res : Response) => {
-    const url = req.body
-    console.log(url)
+    const { url } = req.body;
 
-    res.json ({
-        url : url
-    })
+    const result  = analyzeUrlService(url);
+
+    res.json (result);
 }
