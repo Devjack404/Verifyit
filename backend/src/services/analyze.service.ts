@@ -3,12 +3,12 @@ import { checkUsesIP } from "../rules/rulesCheckTypeIP";
 
 export function analyzeUrlService (url : string) {
      
-    const resultCheckProtocol = checkProtocol(url);
+    const protocolResult = checkProtocol(url);
 
-    const resultIp = checkUsesIP(url);
+    const ipResult = checkUsesIP(url);
 
     return {
-        resultCheckProtocol,
-        resultIp
+        protocolResult,
+        ipResult
     }
 }
