@@ -4,11 +4,11 @@
 - Vite
 - React Router
 - Tailwind CSS
-- shadcn/ui
-- TanStack Query
+- shadcn/ui (Segera)
+- TanStack Query (Perlu dipelajari)
 - React Hook Form
-- Zod
-- Lucide React
+- Zod (Perlu dipelajari)
+- Lucide React (Perlu dipelajari)
   
 ## Backend
 - Node.js
@@ -19,10 +19,10 @@
 MariaDb
 
 ## ORM
-Drizzle ORM
+Drizzle ORM (Perlu dipelajari)
 
 ## Cache
-Redis
+Redis (Perlu dipelajari)
 
 ## Deployment
 Docker
