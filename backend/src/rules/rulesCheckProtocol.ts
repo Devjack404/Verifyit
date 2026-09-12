@@ -1,11 +1,11 @@
 export function checkProtocol(urlText : string): string { try{
         const url = new URL(urlText);
 
-        if (url.protocol === "http:") {
+        if (url.protocol === "http") {
             return "Peringatan : URL tidak menggunakan HTTPS";
         }
 
-        if (url.protocol === "https:") {
+        if (url.protocol === "https") {
             return "Peringatan : URL menggunakan HTTP, bukan HTTPS"
         }
         
