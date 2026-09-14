@@ -1,18 +1,20 @@
 import { Routes, Route } from "react-router-dom";
+import {
+  // useQuery,
+  // useMutation,
+  // useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import AnalyzePage from "./pages/AnalyzePage";
 import DisplayResultPage from "./pages/DisplayResultPage";
 import LandingPageAnalyze from "./pages/LandingPageAnalyze";
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools' 
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from '@tanstack/react-query'
+
+
 
 const queryClient = new QueryClient();
 
