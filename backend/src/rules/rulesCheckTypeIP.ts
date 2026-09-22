@@ -30,3 +30,5 @@ export function checkUsesIP(urlText : string): string {
 
 }
 
+checkUsesIP('http://localhost:5173/');
+
