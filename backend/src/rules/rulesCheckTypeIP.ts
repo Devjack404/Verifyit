@@ -1,7 +1,11 @@
 import net from 'node:net';
 
+interface CheckTypesProps {
+    message : string;
+    hostName : string;
+}
 
-export function checkUsesIP(urlText : string): string {
+export function checkUsesIP(urlText : string): CheckTypesProps{
     try {
         const urlObject = new URL(urlText);
         const domain = urlObject.hostname;
@@ -10,25 +14,31 @@ export function checkUsesIP(urlText : string): string {
         const ipVersion = net.isIP(ipAddress)
         
         if(ipVersion === 4) {
-            console.log(`Warning : Hostname "${domain}" terdeteksi sebagai IPV4.`)
-            return "Peringatan : URL ini menggunakan Alamat IP, bukan domain resmi !"
+            return {
+                message : "URL ini menggunakan IP4", 
+                hostName : domain
+            }
         }
         if(ipVersion === 6) {
-            console.log(`Warning : Hostname "${domain}" terdeteksi sebagai IPV6.`)
-            return "Peringatan : URL ini menggunakan Alamat IP, bukan domain resmi !"
+            return {
+                message : "URL ini menggunakan IP6", 
+                hostName : domain
+            }
         }
         
-       
-        console.log(`[LOG] Info: Hostname '${domain}' menggunakan domain biasa.`);
-        return "Aman : URL menggunakan domain biasa";
+        return {
+            message : "Aman : URL menggunakan domain biasa",
+            hostName : domain
+        }
     }
 
     catch {
-        console.error(`[LOG] Error: Format URL '${urlText}' tidak valid! Khusus URL wajib menggunakan protokol (contoh: http:// atau https://).`);
-        return "Error : Format URL tidak valid";
+        return {
+            message : `Error : Format URL'${urlText}' tidak valid`,
+            hostName : "Unknown"
+        }
     }
 
 }
 
-checkUsesIP('http://localhost:5173/');
 
