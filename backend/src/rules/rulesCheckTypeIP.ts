@@ -2,7 +2,7 @@ import net from 'node:net';
 
 interface CheckTypesProps {
     message : string;
-    hostName : string;
+    hostname : string;
 }
 
 export function checkUsesIP(urlText : string): CheckTypesProps{
@@ -16,26 +16,26 @@ export function checkUsesIP(urlText : string): CheckTypesProps{
         if(ipVersion === 4) {
             return {
                 message : "URL ini menggunakan IP4", 
-                hostName : domain
+                hostname : domain
             }
         }
         if(ipVersion === 6) {
             return {
                 message : "URL ini menggunakan IP6", 
-                hostName : domain
+                hostname : domain
             }
         }
         
         return {
             message : "Aman : URL menggunakan domain biasa",
-            hostName : domain
+            hostname : domain
         }
     }
 
     catch {
         return {
             message : `Error : Format URL'${urlText}' tidak valid`,
-            hostName : "Unknown"
+            hostname : "Unknown"
         }
     }
 

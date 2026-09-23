@@ -9,3 +9,4 @@ export const analyzeUrlController = (req : Request, res : Response) => {
 
     res.json (result);
 }
+
