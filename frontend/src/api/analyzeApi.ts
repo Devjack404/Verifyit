@@ -1,4 +1,4 @@
-export async function fetchingDataBe(url : string) {
+export async function fetchingDataBE(url : string) {
     const response = await fetch ('http://localhost:3000/api/analyze', {
         method : 'POST',
         headers : {
