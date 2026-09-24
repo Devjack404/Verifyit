@@ -6,9 +6,11 @@ export async function fetchingDataBE(url : string) {
         },
         body : JSON.stringify({url : url,})
     });
-    const data = await response.json();
-    console.log(data);
 
-    return data;
+    if(!response.ok){
+        throw new Error("Gagal mengambil data analysis URL")
+    }
+
+    return response.json();
 }
 
