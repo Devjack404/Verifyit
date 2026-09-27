@@ -1,3 +1,4 @@
+
 export async function fetchingDataBE(url : string) {
     const response = await fetch ('http://localhost:3000/api/analyze', {
         method : 'POST',
@@ -5,12 +6,18 @@ export async function fetchingDataBE(url : string) {
             'Content-Type' : 'application/json',
         },
         body : JSON.stringify({url : url,})
-    });
-
+    })
     if(!response.ok){
         throw new Error("Gagal mengambil data analysis URL")
     }
 
-    return response.json();
+    const data = await response.json();
+
+    console.log(data)
+
+    return data;
 }
+
+
+fetchingDataBE("https://www.google.com/")
 

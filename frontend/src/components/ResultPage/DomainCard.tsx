@@ -1,4 +1,5 @@
 import ShieldIcon from "../icons/ShieldIcon"
+import { fetchingDataUrl } from "./FetchingDataURL"
 
 export default function DomainCard (){
     return (
