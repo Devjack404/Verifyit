@@ -1,5 +1,17 @@
 import ShieldIcon from "../icons/ShieldIcon"
-import { fetchingDataUrl } from "./FetchingDataURL"
+// import { fetchingDataUrl } from "./FetchingDataURL"
+import { useEffect, useState } from "react"
+
+interface DomaincardProps{
+    url : string;
+}
+
+interface AnalyzeResult {
+    url : string;
+    domain : string;
+    protocol : string;
+    isSecure : string;
+}
 
 export default function DomainCard (){
     return (
