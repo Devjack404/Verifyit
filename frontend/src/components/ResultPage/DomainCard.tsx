@@ -1,5 +1,5 @@
 import ShieldIcon from "../icons/ShieldIcon"
-// import { fetchingDataUrl } from "./FetchingDataURL"
+import { fetchingDataUrl } from "./FetchingDataURL"
 import { useEffect, useState } from "react"
 
 interface DomaincardProps{
@@ -13,12 +13,17 @@ interface AnalyzeResult {
     isSecure : string;
 }
 
-export default function DomainCard (){
+
+export default function DomainCard ({url} : DomaincardProps){
     return (
+
+
+        export default function DomainCard ({url} : DomaincardProps){
+
         <div className="flex w-full items-start justify-between bg-gray-50 ">
             {/* Left */}
             <div>
-                <h2 className="text-3xl font-bold">example-secure-shop.com</h2>
+                <h2 className="text-3xl font-bold">fetchingDataBE</h2>
 
                 <p className="mt-2 text-sm text-gray-500">Analysis Date : Oct 24, 2023 | 14 : 32 WIB</p> 
             </div>
@@ -28,7 +33,7 @@ export default function DomainCard (){
                 <button className="rounded-full flex gap-2 border px-7 py-3 text-sm hover:bg-gray-100">
                     <ShieldIcon />
                     Share
-                </button>            
+                </button>           
 
                 <button className="rounded-full flex gap-2 border px-7 py-3 text-sm hover:bg-gray-100">
                     <ShieldIcon />
