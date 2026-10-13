@@ -15,15 +15,17 @@ interface AnalyzeResult {
 
 
 export default function DomainCard ({url} : DomaincardProps){
+    const [data, setData] = useState <AnalyzeResult | null>(null);
+
+    useEffect(() => {
+        fetchingDataUrl(url).then(setData);
+    }, [data]);
+
     return (
-
-
-        export default function DomainCard ({url} : DomaincardProps){
-
         <div className="flex w-full items-start justify-between bg-gray-50 ">
             {/* Left */}
             <div>
-                <h2 className="text-3xl font-bold">fetchingDataBE</h2>
+                <h2 className="text-3xl font-bold">{data?.domain}</h2>
 
                 <p className="mt-2 text-sm text-gray-500">Analysis Date : Oct 24, 2023 | 14 : 32 WIB</p> 
             </div>

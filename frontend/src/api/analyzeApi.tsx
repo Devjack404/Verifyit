@@ -19,5 +19,4 @@ export async function fetchingDataBE(url : string) {
 }
 
 
-fetchingDataBE("https://www.google.com/")
 
