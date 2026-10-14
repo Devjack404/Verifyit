@@ -4,7 +4,12 @@ import AnalysisIndicatorsContainer from "./AnalysisIndicatorsContainer";
 import UrlChecker from "./UrlChecker";
 import AboutSecurityContainer from "./AboutSecurityContainer";
 
-export default function ResultPage (){
+type ResultPageProps = {
+    url : string;
+}
+
+
+export default function ResultPage ({url}: ResultPageProps){
     return (
         <div className="w-full max-w-7xl">
             {/* Analysis Summary Container */}
@@ -12,7 +17,7 @@ export default function ResultPage (){
 
                 {/* left container  */}
                 <div className="flex-1">
-                    <AnalysisSummarryContainer />
+                    <AnalysisSummarryContainer  url={url} />
                 </div>
 
                 {/* Right Container */}

@@ -1,28 +1,16 @@
+import { useNavigate } from "react-router-dom";
+
 type analyzeButtonProps = {
-    url : string
-}
+  url: string;
+};
 
-export default function AnalyzeButton ({url } : analyzeButtonProps){
-    const handleAnalyze = async () => {
-        console.log("URL : ", url);
-        
-        
-        const responseDataAnalyze = await fetch ("http://localhost:3000/api/analyze", {
-            method : "POST",
-            headers : {
-                "Content-type" : "application/json",
-            },
-            body : JSON.stringify({
-                url : url,
-            }),
-        });
+export default function AnalyzeButton ({url } : analyzeButtonProps) {
+    const navigate = useNavigate ();
 
-        const dataResult  = await responseDataAnalyze.json();
-
-        console.log(dataResult);
+    const handleAnalyze = () => {
+        navigate("/result", { state: {url} });
     }
 
-    
     return (
         <button
             onClick={handleAnalyze} 
