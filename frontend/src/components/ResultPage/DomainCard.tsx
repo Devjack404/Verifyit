@@ -2,7 +2,7 @@ import ShieldIcon from "../icons/ShieldIcon"
 import { fetchingDataUrl } from "./FetchingDataURL"
 import { useEffect, useState } from "react"
 
-interface AnalysisSummarryContainer{
+interface DomaincardProps{
     url : string;
 }
 

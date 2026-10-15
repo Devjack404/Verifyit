@@ -8,7 +8,7 @@ export default function DisplayResultPage (){
 
     return (
         <div className="flex flex-1 justify-center px-6">
-            <ResultPage />
+            <ResultPage url={url} />
         </div>
     );
 }

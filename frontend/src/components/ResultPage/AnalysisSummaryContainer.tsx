@@ -2,10 +2,16 @@ import DomainCard from "./DomainCard"
 import TrustScoreCard from "./TrustScoreCard"
 import AnalysisSummarryCard from "./AnalysisSummaryCard"
 
-export default function AnalysisSummarryContainer (){
+type AnalysisSummaryProps = {
+    url : string;
+}
+
+export default function AnalysisSummarryContainer ({
+    url, 
+    }: AnalysisSummaryProps){
     return (
         <div className="w-full bg-gray-50 p-10 rounded-2xl ">
-            <DomainCard />
+            <DomainCard url={url}/>
 
             <div className="flex items-start gap-15 mt-10">
                 <TrustScoreCard />
