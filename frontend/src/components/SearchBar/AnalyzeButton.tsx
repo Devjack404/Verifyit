@@ -6,10 +6,17 @@ type analyzeButtonProps = {
 
 export default function AnalyzeButton ({url } : analyzeButtonProps) {
     const navigate = useNavigate ();
-
+    const dateTimeAnalyze = new Date().toLocaleString ();   
+    
     const handleAnalyze = () => {
-        navigate("/result", { state: {url} });
+        navigate("/result", {
+            state: {
+                url, 
+                dateTimeAnalyze
+            }});
     }
+
+
 
     return (
         <button
